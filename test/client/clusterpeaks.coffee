@@ -8,12 +8,6 @@ requirejs.config
 
 clusterpeaks = requirejs path.resolve __dirname, '../../public/js/clusterpeaks.js'
 
-strRepeat = (str, ln) ->
-  output = ''
-  for i in [1..ln] by 1
-    output += str
-  output
-
 describe 'clusterpeaks', ->
   
   it 'should return 1 item', ->
@@ -48,8 +42,4 @@ describe 'clusterpeaks', ->
     data = require path.resolve @fixtures, './peaks.json'
     data.length.should.equal 108
     clustered = clusterpeaks data
-    for item in data
-      console.log strRepeat '=', item.g*10
-    for item in clustered
-      console.log strRepeat '=', item.g*10
     clustered.length.should.equal 33
