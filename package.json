@@ -1,0 +1,30 @@
+{
+  "name": "accel-dance-party",
+  "version": "0.0.1",
+  "description": "Visualize the beat at which people at a party are dancing to using their phones' accelerometers.",
+  "main": "bin/app.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/*.coffee test/**/*.coffee --require coffee-script/register --reporter spec",
+    "start": "node bin/app"
+  },
+  "author": "Brian Shaler",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.5.0",
+    "gulp-browserify": "^0.5.0",
+    "gulp-coffee": "^2.1.1",
+    "gulp-plumber": "^0.6.3",
+    "gulp-util": "^2.2.20",
+    "gulp-watch": "^0.6.8",
+    "mocha": "^1.20.1",
+    "requirejs": "^2.1.14",
+    "should": "^4.0.4"
+  },
+  "dependencies": {
+    "express": "^4.6.1",
+    "lodash": "^2.4.1",
+    "primus": "^2.3.0",
+    "socket.io": "^0.9.17"
+  }
+}
