@@ -9,7 +9,7 @@ This hack was whipped together at [Code+Beats](http://codeandbeats.com).
     # with node/npm, gulp, and bower installed globally
     npm install
     bower install
-    gulp
+    gulp --require coffee-script/register
 
 ### To run tests:
 
